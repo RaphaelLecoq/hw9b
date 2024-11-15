@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <a href="./">Index page</a> <br>
+    <h2>Sample Form</h2>
+
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+  
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="name@domain" required><br><br>
+
+      <label>Payment Type:</label><br>
+      <input type="radio" id="cash" name="payment" value="Cash" required>
+      <label for="cash">Cash</label><br>
+      <input type="radio" id="credit" name="payment" value="Credit Card" required>
+      <label for="credit">Credit Card</label><br>
+      <input type="radio" id="google" name="payment" value="Google Pay" required>
+      <label for="google">Google Pay</label><br>
+      <input type="radio" id="apple" name="payment" value="Apple Pay" required>
+      <label for="apple">Apple Pay</label><br><br>
+  
+      <input type="checkbox" id="promotion" name="promotion" value="on">
+      <label for="promotion">Sign me up for special promotions</label><br><br>
+
+      <label for="location">Preferred Location:</label>
+      <select id="location" name="location" required>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Orange County">Orange County</option>
+        <option value="Riverside">Riverside</option>
+        <option value="San Diego">San Diego</option>
+      </select><br><br>
+  
+      <button type="button" onclick="displayFormData()">Submit</button>
+      <button type="button" onclick="cancel()">Cancel</button>
+    </form>
+  
+    <script src="/js/ex1.js"></script>
+</body>
+</html>
